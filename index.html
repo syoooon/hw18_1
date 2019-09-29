@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lunch time</title>
+	<style type="text/css">
+		#mybody = {margin: 0; text-align: center;
+			background-color:#F3E2A9;}
+		.white{opacity: 0.5;}
+		.white:hover{opacity: 1;}
+		#text{font-size: 52px; margin-left: 700px; margin-bottom: 0;position: absolute;}
+		#rainy{background:url(rainyday.gif); position: absolute; margin-left: 900px;
+			margin-top: 250px; width: 300px; height: 400px; background-size: cover;}
+	</style>
+</head>
+<body id="mybody">
+	<h1 id="text">Lunch time</h1>
+	<div id="rainy"></div>
+
+	<img src="back.png" id="x" style="margin-top: 0; position: absolute;">
+
+	<img src="cat.png" class="white" id="c" style="position: absolute; padding-left: 440px; padding-top: 220px; z-index: 9999;">
+	<audio src="kitty.wav" loop id="cc"></audio>
+	
+	<img src="ct1.png" class="white" id="ct" style="position: absolute; padding-left: 860px; padding-top: 260px; z-index: 999">
+	<audio src="rain.wav" loop id="ctct"></audio>
+	
+	<img src="kettle.png" class="white" id="k" style=";position: absolute; padding-left: 110px; padding-top: 420px; z-index: 99999;">
+	<audio src="boiling.wav" loop id="kk"></audio>
+	<img src="light.png" id="l" style="position: absolute; padding-left: 755px; padding-top: 120px; z-index: 99999999999;">
+	
+	<img src="lpp.png" class="white" id="r" style="position: absolute; padding-left:1420px;padding-top: 670px; ">
+	<audio src="gym.wav" loop id="rr"></audio>
+	
+	<img src="maid.png" class="white" id="m" style="position: absolute; margin-left: 840px; margin-top: 580px; z-index: 99;">
+	<audio src="humming.wav" loop id="mm"></audio>
+	
+	<img src="orgel.png" class="white" id="o" style="position: absolute; margin-top: 370px; margin-left: 590px; z-index: 999999;">
+	<audio src="musicbox.wav" loop id="oo"></audio>
+   
+	<script type="text/javascript">
+		var cstate = "off"
+		c.onclick = function(){
+			if(cstate == "off"){
+			c.style.opacity = "1";
+			cc.play();
+			cc.volume = 0.3;	
+			cstate = "on";
+		}else{
+			c.style.opacity = "0.3";
+			cc.pause();
+			cstate = "off";}
+		}
+		
+		var mstate = "off"
+		m.onclick = function(){
+			if(mstate == "off"){
+			m.style.opacity = "1";
+			mm.play();	
+			mstate = "on";
+		}else{
+			m.style.opacity = "0.3";
+			mm.pause();
+			mstate = "off";}
+		}
+
+		var ostate = "off"
+		o.onclick = function(){
+			if(ostate == "off"){
+			o.style.opacity = "1";
+			oo.play();	
+			ostate = "on";
+		}else{
+			o.style.opacity = "0.3";
+			oo.pause();
+			ostate = "off";}
+		}
+
+		var kstate = "off"
+		k.onclick = function(){
+			if(kstate == "off"){
+			k.style.opacity = "1";
+			kk.play();
+			kk.volume = 0.5;	
+			kstate = "on";
+		}else{
+			k.style.opacity = "0.3";
+			kk.pause();
+			kstate = "off";}
+		}
+
+		var ctstate = "off"
+		ct.onclick = function(){
+			if(ctstate == "off"){
+			ct.src = "ct2.png";
+			ct.style.opacity = "1";
+			ctct.play();
+			ctct.volume = 0.2;	
+			ctstate = "on";
+		}else{
+			ct.src = "ct1.png";
+			ct.style.opacity = "0.3";
+			ctct.pause();
+			ctstate = "off";}
+		}
+
+		var rstate = "off"
+		r.onclick = function(){
+			if(rstate == "off"){
+			r.style.opacity = "1";
+			rr.play();
+			rr.volume = 0.4;	
+			rstate = "on";
+		}else{
+			r.style.opacity = "0.3";
+			rr.pause();
+			rstate = "off";}
+		}
+	</script>
+</body>
+<footer style="color: #595A73; position: absolute; margin-top: 1450px; margin-left: 700px;">
+		Copyright 2019. So Yoon Jeong All rights reserved.
+	</footer>
+</html>
